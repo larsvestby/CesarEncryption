@@ -12,3 +12,4 @@ c:\Users\Lars\Desktop\Skole\H5\Test&Sikkerhed\CesarEncryption\CesarEncrypt\obj\D
 c:\Users\Lars\Desktop\Skole\H5\Test&Sikkerhed\CesarEncryption\CesarEncrypt\obj\Debug\net9.0\CesarEncrypt.pdb
 c:\Users\Lars\Desktop\Skole\H5\Test&Sikkerhed\CesarEncryption\CesarEncrypt\obj\Debug\net9.0\CesarEncrypt.genruntimeconfig.cache
 c:\Users\Lars\Desktop\Skole\H5\Test&Sikkerhed\CesarEncryption\CesarEncrypt\obj\Debug\net9.0\ref\CesarEncrypt.dll
+c:\Users\Lars\Desktop\Skole\H5\Test&Sikkerhed\CesarEncryption\CesarEncrypt\obj\Debug\net9.0\CesarEncrypt.sourcelink.json

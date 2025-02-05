@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CesarEncrypt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce4798d36ccd7e983b7d9c57abce9ec213640ebe")]
 [assembly: System.Reflection.AssemblyProductAttribute("CesarEncrypt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CesarEncrypt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
