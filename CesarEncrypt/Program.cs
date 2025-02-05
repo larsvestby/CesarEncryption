@@ -94,8 +94,7 @@ public class Program
         Console.WriteLine($"\nBest Key: {bestKey} with Score: {bestScore}");
         Console.WriteLine($"Decrypted Text: {bestDecryption}\n");
     }
-
-    public static void Main(string[] args)
+    public static void TestEncryptDecrypt()
     {
         Console.WriteLine($"Original: {string1}");
         string encrypted1 = Encrypt(string1, 7);
@@ -108,54 +107,75 @@ public class Program
         string decrypted2 = Decrypt(encrypted2, 16);
         Console.WriteLine($"Encrypted 2: {encrypted2}");
         Console.WriteLine($"Decrypted 2: {decrypted2}\n");
+    }
+
+    public static void StringEncrypt()
+    {
+        Console.Write("Enter a string to encrypt: ");
+        string input = Console.ReadLine() ?? string.Empty;
+        Console.Write("Enter a key (0-25): ");
+        if (int.TryParse(Console.ReadLine(), out int key) && key >= 0 && key < 26)
+        {
+            string encrypted = Encrypt(input, key);
+            Console.WriteLine($"Encrypted: {encrypted}\n");
+            Console.WriteLine($"Decrypted: {Decrypt(encrypted, key)}\n");
+        }
+        else
+        {
+            Console.WriteLine("Invalid key! Please enter a number between 0 and 25.\n");
+        }
+    }
+
+    public static void StringDecrypt()
+    {
+        Console.Write("Enter an encrypted string: ");
+        string input = Console.ReadLine() ?? string.Empty;
+        Console.WriteLine("Brute-force decryption with frequency analysis results:");
+        BruteForceDecrypt(input);
+        Console.WriteLine();
+    }
+
+    public static void TxtDecrypt()
+    {
+        Console.WriteLine("Enter file name:\n");
+        string path = Console.ReadLine() ?? string.Empty;
+        string filePath = $"../../../Lyrics/{path}";
+
+        if (File.Exists(filePath))
+        {
+            string text = File.ReadAllText(filePath);
+            Console.WriteLine("Encrypted text:\n" + text + "\n");
+
+            Console.WriteLine("Brute-force decryption with frequency analysis results:");
+            BruteForceDecrypt(text);
+        }
+        else
+        {
+            Console.WriteLine("Error: File not found!\n");
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        TestEncryptDecrypt();
 
         while (true)
         {
+            //Console.Clear();
             Console.WriteLine("Choose an option: \n1. Encrypt text\n2. Brute-force decrypt text with frequency analysis\n3. .Txt Brute-force decrypt\n4. Exit");
             string choice = Console.ReadLine() ?? "";
 
             if (choice == "1")
             {
-                Console.Write("Enter a string to encrypt: ");
-                string input = Console.ReadLine() ?? string.Empty;
-                Console.Write("Enter a key (0-25): ");
-                if (int.TryParse(Console.ReadLine(), out int key) && key >= 0 && key < 26)
-                {
-                    string encrypted = Encrypt(input, key);
-                    Console.WriteLine($"Encrypted: {encrypted}\n");
-                    Console.WriteLine($"Decrypted: {Decrypt(encrypted, key)}\n");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid key! Please enter a number between 0 and 25.\n");
-                }
+                StringEncrypt();
             }
             else if (choice == "2")
             {
-                Console.Write("Enter an encrypted string: ");
-                string input = Console.ReadLine() ?? string.Empty;
-                Console.WriteLine("Brute-force decryption with frequency analysis results:");
-                BruteForceDecrypt(input);
-                Console.WriteLine();
+                StringDecrypt();
             }
             else if (choice == "3")
             {
-                Console.WriteLine("Enter file name:\n");
-                string path = Console.ReadLine() ?? string.Empty;
-                string filePath = $"../../../Lyrics/{path}";
-
-                if (File.Exists(filePath))
-                {
-                    string text = File.ReadAllText(filePath);
-                    Console.WriteLine("Encrypted text:\n" + text + "\n");
-
-                    Console.WriteLine("Brute-force decryption with frequency analysis results:");
-                    BruteForceDecrypt(text);
-                }
-                else
-                {
-                    Console.WriteLine("Error: File not found!\n");
-                }
+                TxtDecrypt();
             }
             else if (choice == "4")
             {
