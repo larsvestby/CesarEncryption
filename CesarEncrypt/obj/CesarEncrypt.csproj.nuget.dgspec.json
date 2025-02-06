@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj": {}
+    "C:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj": {
+    "C:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj",
+        "projectUniqueName": "C:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj",
         "projectName": "CesarEncrypt",
-        "projectPath": "c:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj",
+        "projectPath": "C:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\CesarEncrypt.csproj",
         "packagesPath": "C:\\Users\\Lars\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\obj\\",
+        "outputPath": "C:\\Users\\Lars\\Desktop\\Skole\\H5\\Test&Sikkerhed\\CesarEncryption\\CesarEncrypt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
